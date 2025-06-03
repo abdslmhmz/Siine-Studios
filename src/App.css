@@ -93,7 +93,9 @@ body {
 }
 
 .section1 {
-  background: #110236;
+  background: url(../public/studio-illustration.jpg);
+  background-size: cover;
+  background-position: center;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -188,8 +190,13 @@ body {
   margin-inline: -0.5rem;
 }
 
-.services-action-button{
-  
+.dark-filter {
+  position: absolute;
+  inset: 0;
+  background-color: #110236;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
 }
 
 @media (max-width: 48rem) {

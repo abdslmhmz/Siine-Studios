@@ -12,7 +12,7 @@ function App() {
 
     setTimeout(() => {
       setAnimate(true);
-      
+
     }, 1500);
   };
 
@@ -59,6 +59,7 @@ function App() {
 
         </header>
         <section className={`section1 ${animate ? 'section1-animate' : ''}`}>
+          <div class={`${animate ? 'dark-filter' : ''}`}></div>
           <div className="action-text">
             <div className="action-text1">bring your</div>
             <div className="action-text2">VISION to LIFE</div>
