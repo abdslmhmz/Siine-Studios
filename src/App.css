@@ -1,38 +1,317 @@
-.App {
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  perspective: 6.25rem;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.header,
+.section1 {
+  transition: transform 1s ease
+}
+
+.background,
+.foreground,
+.foreground-zoom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.background {
+  transform: translateZ(-6.25rem) scale(2.1);
+}
+
+.foreground {
+  transform: translateZ(-4.375rem) scale(1.71);
+}
+
+.background-zoom {
+  filter: brightness(0.5);
+}
+
+.foreground-zoom {
+  transform: translateZ(-4.375rem) scale(2.71);
+  filter: blur(0.16rem);
+}
+
+
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  background-color: #e5fbfb;
+  border-radius: 50px;
+  border-color: #c3f5f5;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(46, 46, 46);
+  font-size: 0.9em;
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.switch svg path {
+  fill: rgb(46, 46, 46);
+}
+
+#checkbox:checked+.switch {
+  background-color: #e5fbfb;
+  box-shadow: 0px 0px 40px white;
+}
+
+.switch-zoom {
+  opacity: 0;
+}
+
+.switch-animate {
+  cursor: not-allowed;
+}
+
+.section1 {
+  background: #110236;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.section1-animate,
+.header-animate {
+  transform: translateY(-70vh);
+}
+
+.moon {
+  position: absolute;
+  width: 37.5rem;
+  height: 17.5rem;
+  top: 5%;
+  left: 50%;
+  transform: translateZ(-4.438rem) scale(1.72);
+}
+
+.moon-zoom {
+  top: -100%;
+}
+
+.foreground,
+.moon,
+.logo,
+.switch-zoom,
+.background,
+.logo-animate {
+  transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
+}
+
+
+.logo {
+  max-width: 20rem;
+  height: auto;
+  transform: translateZ(-4.125rem) scale(1.51);
+}
+
+.logo-zoom {
+  transform: translateZ(-3.125rem) scale(1.51) translateY(-1rem);
+}
+
+.logo-animate {
+  padding-top: 15vh;
+}
+
+.action-text {
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.action-text1,
+.action-text2 {
+  text-align: center;
+  font-family: 'Libre Franklin', 'Arial Narrow', Arial, sans-serif;
+  color: #e5fbfb;
+  text-shadow: 0.125rem 0.125rem 0.313rem #0a0b35, 0.313rem 0.313rem 4.375rem #3537aa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.action-text1 {
+  font-weight: 300;
+  font-size: 2.7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.action-text2 {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.action-text3 {
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: #e5fbfb;
+  padding: 2rem 10%;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.action-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.right-arrow{
+  transform: scaleY(1.8) scaleX(1.5);
+  font: message-box;
+  margin-inline: -0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.services-action-button{
+  
+}
+
+@media (max-width: 48rem) {
+  .moon {
+    width: 25rem;
+    height: 12.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo {
+    max-width: 18.75rem;
+  }
+
+  .foreground {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .action-text1 {
+    font-size: 2rem;
+  }
+  
+  .action-text2 {
+    font-size: 2.8rem;
+  }
+  
+  .action-text3 {
+    padding: 2rem 10%;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+  }
+  .switch {
+    padding: 0.4rem 1.8rem;
+    font-size: 0.75em;
+  }
+
+  .logo {
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 35.5rem) {
+  .logo {
+    max-width: 15.625rem;
+  }
+
+  .foreground {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .action-text1 {
+    font-size: 1.9rem;
+  }
+  
+  .action-text2 {
+    font-size: 2.5rem;
+  }
+
+  .action-buttons {
+    gap: 2rem;
+  }
+
+  .action-buttons .switch{
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+@media (max-width: 26.563rem) {
+  .moon {
+    width: 18.75rem;
+    height: 8.75rem;
+    left: 40%;
+  }
+
+  .logo {
+    max-width: 14.063rem;
+  }
+
+  .foreground {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .action-text1 {
+    font-size: 1.7rem;
+  }
+  
+  .action-text2 {
+    font-size: 2.1rem;
+  }
+  
+  .action-text3 {
+    padding: 1.5rem 10%;
+    font-size: 0.8rem;
+  }
+
+  .action-buttons {
+    gap: 1.5rem;
+  }
+
+  .action-buttons .switch{
+    padding: 0.3rem 1rem;
   }
 }
