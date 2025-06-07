@@ -17,7 +17,7 @@ body {
   align-items: center;
   height: 100vh;
   transform-style: preserve-3d;
-  z-index: -3;
+  z-index: -1;
 }
 
 .header,
@@ -48,6 +48,7 @@ body {
 
 .foreground-zoom {
   transform: translateZ(-4.375rem) scale(2.71);
+  filter: blur(0.16rem);
 }
 
 
@@ -95,7 +96,7 @@ body {
 }
 
 .section1 {
-  background: #100138;
+  background: url(../public/studio-video.webp);
   background-size: cover;
   background-position: center;
   height: 70vh;
