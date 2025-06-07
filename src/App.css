@@ -1,8 +1,9 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
-.wrapper {
+.Home {
   height: 100vh;
   overflow: hidden;
   perspective: 6.25rem;
@@ -55,7 +56,12 @@ body {
   display: none;
 }
 
-.switch {
+.buttons-icon{
+  width: 1rem;
+  height: 1rem;
+  margin: -0.5rem;
+}
+.buttons {
   position: relative;
   width: fit-content;
   padding: 0.5rem 2rem;
@@ -75,20 +81,16 @@ body {
   transition: all 0.3s;
 }
 
-.switch svg path {
-  fill: rgb(46, 46, 46);
-}
-
-#checkbox:checked+.switch {
+#checkbox:checked+.buttons {
   background-color: #e5fbfb;
   box-shadow: 0px 0px 40px white;
 }
 
-.switch-zoom {
+.buttons-zoom {
   opacity: 0;
 }
 
-.switch-animate {
+.buttons-animateHome {
   cursor: not-allowed;
 }
 
@@ -104,8 +106,8 @@ body {
   gap: 5%;
 }
 
-.section1-animate,
-.header-animate {
+.section1-animateHome,
+.header-animateHome {
   transform: translateY(-70vh);
 }
 
@@ -125,9 +127,9 @@ body {
 .foreground,
 .moon,
 .logo,
-.switch-zoom,
+.buttons-zoom,
 .background,
-.logo-animate {
+.logo-animateHome {
   transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
 }
 
@@ -142,7 +144,7 @@ body {
   transform: translateZ(-3.125rem) scale(1.51) translateY(-1rem);
 }
 
-.logo-animate {
+.logo-animateHome {
   padding-top: 15vh;
 }
 
@@ -184,21 +186,6 @@ body {
   gap: 3rem;
 }
 
-.right-arrow{
-  transform: scaleY(1.8) scaleX(1.5);
-  font: message-box;
-  margin-inline: -0.5rem;
-}
-
-.dark-filter {
-  position: absolute;
-  inset: 0;
-  background-color: #110236;
-  opacity: 0.4;
-  pointer-events: none;
-  z-index: -1;
-}
-
 @media (max-width: 48rem) {
   .moon {
     width: 25rem;
@@ -234,13 +221,17 @@ body {
     font-size: 0.8rem;
     line-height: 1.25rem;
   }
-  .switch {
+  .buttons {
     padding: 0.4rem 1.8rem;
     font-size: 0.75em;
   }
 
   .logo {
     max-width: 18rem;
+  }
+
+  .buttons-icon{
+    margin: -0.5rem;
   }
 }
 
@@ -273,7 +264,7 @@ body {
     gap: 2rem;
   }
 
-  .action-buttons .switch{
+  .action-buttons .buttons{
     padding: 0.4rem 1.5rem;
   }
 }
@@ -318,7 +309,7 @@ body {
     gap: 1.5rem;
   }
 
-  .action-buttons .switch{
+  .action-buttons .buttons{
     padding: 0.3rem 1rem;
   }
 }
