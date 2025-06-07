@@ -49,7 +49,6 @@ function App() {
 
         </header>
         <section className={`section1 ${animateHome ? 'section1-animateHome' : ''}`}>
-          <div class={`${animateHome ? 'dark-filter' : ''}`} />
           <div className="action-text">
             <div className="action-text1">bring your</div>
             <div className="action-text2">VISION to LIFE</div>
