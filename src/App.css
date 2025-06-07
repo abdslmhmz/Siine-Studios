@@ -17,7 +17,7 @@ body {
   align-items: center;
   height: 100vh;
   transform-style: preserve-3d;
-  z-index: -2;
+  z-index: -3;
 }
 
 .header,
@@ -95,7 +95,7 @@ body {
 }
 
 .section1 {
-  background: url(../public/studio-video.webp);
+  background: #100138;
   background-size: cover;
   background-position: center;
   height: 70vh;
