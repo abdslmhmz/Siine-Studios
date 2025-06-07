@@ -243,6 +243,9 @@ body {
   .buttons-icon {
     margin: -0.5rem;
   }
+
+  .section1 {
+    background: url(../public/studio-video-mobile.webp);}
 }
 
 @media (max-width: 35.5rem) {
