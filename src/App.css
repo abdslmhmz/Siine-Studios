@@ -3,7 +3,11 @@ body {
   overflow: hidden;
 }
 
-.Home {
+img{box-sizing: border-box;}
+
+.Home{
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   perspective: 6.25rem;
@@ -21,7 +25,7 @@ body {
 }
 
 .header,
-.section1 {
+.sectionHome {
   transition: transform 1s ease
 }
 
@@ -50,11 +54,6 @@ body {
   transform: translateZ(-4.375rem) scale(2.71);
 }
 
-
-#checkbox {
-  display: none;
-}
-
 .buttons-icon {
   width: 1rem;
   height: 1rem;
@@ -81,11 +80,6 @@ body {
   transition: all 0.3s;
 }
 
-#checkbox:checked+.buttons {
-  background-color: #e5fbfb;
-  box-shadow: 0px 0px 40px white;
-}
-
 .buttons-zoom {
   opacity: 0;
 }
@@ -94,7 +88,7 @@ body {
   cursor: not-allowed;
 }
 
-.section1 {
+.sectionHome {
   background: url(../public/studio-illustration.webp);
   background-size:cover;
   background-position: center;
@@ -109,13 +103,13 @@ body {
 .dark-filter {
   position: absolute;
   width: 100vw;
-  height: 70vh;
-  z-index: -1;
+  height: 80vh;
+  z-index: 1;
   background-color: #100138;
   opacity: 0.4;
 }
 
-.section1-animateHome,
+.sectionHome-animate,
 .header-animateHome {
   transform: translateY(-70vh);
 }
@@ -132,6 +126,7 @@ body {
 .moon-zoom {
   top: -100%;
 }
+
 
 .foreground,
 .moon,
@@ -195,6 +190,59 @@ body {
   gap: 3rem;
 }
 
+
+
+
+
+
+.Services{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.Services-animate{
+  transform: translateX(-100vw);
+}
+
+.Services, .Home{
+  transition: transform 1.5s ease-in-out
+}
+
+.sections-services{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.services-header{
+  background: url(../public/studio-illustration.webp);
+}
+.pre-production{
+  background: url(../public/pre-production-illustration.webp);
+} 
+.production{
+  background: url(../public/production-illustration.webp);
+}
+.post-production{
+  background: url(../public/post-production-illustration.webp);
+}
+
+.services-header, .post-production, .pre-production, .production{
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
 @media (max-width: 48rem) {
   .moon {
     width: 25rem;
@@ -244,7 +292,7 @@ body {
     margin: -0.5rem;
   }
 
-  .section1 {
+  .sectionHome {
     background: url(../public/studio-illustration.webp);
     background-size:cover;
     background-position: center;}
