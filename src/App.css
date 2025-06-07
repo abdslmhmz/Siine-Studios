@@ -48,7 +48,6 @@ body {
 
 .foreground-zoom {
   transform: translateZ(-4.375rem) scale(2.71);
-  filter: blur(0.16rem);
 }
 
 
