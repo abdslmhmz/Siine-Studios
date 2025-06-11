@@ -178,6 +178,9 @@
     background-size: cover;
     background-position: center;
   }
+  .home-text h3{
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 35.5rem) {
@@ -226,5 +229,9 @@
 
   .sectionHome-text {
     padding: 1.5rem 10%;
+  }
+
+  .home-text h3{
+    font-size: 0.8rem;
   }
 }
