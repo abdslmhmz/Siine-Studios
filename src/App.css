@@ -120,7 +120,6 @@ h3{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
 }
 
 
@@ -130,21 +129,18 @@ h3{
   background: url(/public/production-illustration.webp) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .parallax-2 {
   background: url(/public/production-illustration.webp) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .parallax-3 {
   background: url(/public/post-production-illustration.webp) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .parallax-inner {
