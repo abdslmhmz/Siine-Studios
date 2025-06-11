@@ -111,7 +111,40 @@
 }
 
 .logo-animateHome {
-  padding-top: 15vh;
+  padding-top: 45vh;
+}
+
+.home-text-zoom{
+  opacity: 0;
+}
+
+.home-text-animateHome{
+  display: none;
+}
+
+.home-text{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: opacity 1s ease;
+}
+
+.home-text button{
+  margin-top: 5rem;
+}
+
+.home-text h2{
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.home-text h3{
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 @media (max-width: 48rem) {
@@ -136,7 +169,7 @@
     transform: translateZ(-4.375rem) scale(2.71);
   }
 
-  .home-text {
+  .sectionHome-text {
     padding: 2rem 10%;
   }
 
@@ -188,7 +221,7 @@
     transform: translateZ(-4.375rem) scale(2.71);
   }
 
-  .home-text {
+  .sectionHome-text {
     padding: 1.5rem 10%;
   }
 }
