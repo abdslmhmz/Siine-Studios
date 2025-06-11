@@ -111,7 +111,7 @@
 }
 
 .logo-animateHome {
-  padding-top: 45vh;
+  padding-top: 42vh;
 }
 
 .home-text-zoom{
@@ -185,6 +185,9 @@
     max-width: 15.625rem;
   }
 
+  .home-text h2{
+    font-size: 1.6rem;
+  }
   .foreground {
     width: 200%;
     left: 30%;
