@@ -1,93 +1,93 @@
 .Home {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    perspective: 6.25rem;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 6.25rem;
 }
 
 .header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    transform-style: preserve-3d;
-    z-index: -1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
 
 .header,
 .sectionHome {
-    transition: transform 1s ease
+  transition: transform 1s ease
 }
 
 .background,
 .foreground,
 .foreground-zoom {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .background {
-    transform: translateZ(-6.25rem) scale(2.1);
+  transform: translateZ(-6.25rem) scale(2.1);
 }
 
 .foreground {
-    transform: translateZ(-4.375rem) scale(1.71);
+  transform: translateZ(-4.375rem) scale(1.71);
 }
 
 .background-zoom {
-    filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 .foreground-zoom {
-    transform: translateZ(-4.375rem) scale(2.71);
+  transform: translateZ(-4.375rem) scale(2.71);
 }
 
 .sectionHome {
-    background: url(/public/studio-illustration.webp);
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+  background: url(/public/studio-illustration.webp);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 .sectionHome-animate,
 .header-animateHome {
-    transform: translateY(-70vh);
+  transform: translateY(-70vh);
 }
 
 .moon {
-    position: absolute;
-    width: 37.5rem;
-    height: 17.5rem;
-    top: 5%;
-    left: 50%;
-    transform: translateZ(-4.438rem) scale(1.72);
+  position: absolute;
+  width: 37.5rem;
+  height: 17.5rem;
+  top: 5%;
+  left: 50%;
+  transform: translateZ(-4.438rem) scale(1.72);
 }
 
 .moon-zoom {
-    top: -100%;
+  top: -100%;
 }
 
 .buttons-zoom {
-    opacity: 0;
+  opacity: 0;
 }
 
 .buttons-animateHome {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .action-text {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .foreground,
@@ -96,91 +96,99 @@
 .buttons-zoom,
 .background,
 .logo-animateHome {
-    transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
+  transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
 }
 
 
 .logo {
-    max-width: 20rem;
-    height: auto;
-    transform: translateZ(-4.125rem) scale(1.51);
+  max-width: 20rem;
+  height: auto;
+  transform: translateZ(-4.125rem) scale(1.51);
 }
 
 .logo-zoom {
-    transform: translateZ(-3.125rem) scale(1.51) translateY(-1rem);
+  transform: translateZ(-3.125rem) scale(1.51) translateY(-1rem);
 }
 
 .logo-animateHome {
-    padding-top: 15vh;
+  padding-top: 15vh;
 }
 
 @media (max-width: 48rem) {
-    .moon {
-      width: 25rem;
-      height: 12.5rem;
-    }
-  
-    .logo {
-      max-width: 18.75rem;
-    }
-  
-    .foreground {
-      width: 150%;
-      left: 10%;
-      transform: translateZ(-4.375rem) scale(1.71);
-    }
-  
-    .foreground-zoom {
-      width: 150%;
-      left: 10%;
-      transform: translateZ(-4.375rem) scale(2.71);
-    }
-  
-    .sectionHome {
-      background: url(/public/studio-illustration.webp);
-      background-size:cover;
-      background-position: center;}
+  .moon {
+    width: 25rem;
+    height: 12.5rem;
   }
-  
-  @media (max-width: 35.5rem) {
-    .logo {
-      max-width: 15.625rem;
-    }
-  
-    .foreground {
-      width: 200%;
-      left: 30%;
-      transform: translateZ(-4.375rem) scale(1.71);
-    }
-  
-    .foreground-zoom {
-      width: 200%;
-      left: 30%;
-      transform: translateZ(-4.375rem) scale(2.71);
-    }
+
+  .logo {
+    max-width: 18.75rem;
   }
-  
-  @media (max-width: 26.563rem) {
-    .moon {
-      width: 18.75rem;
-      height: 8.75rem;
-      left: 40%;
-    }
-  
-    .logo {
-      max-width: 14.063rem;
-    }
-  
-    .foreground {
-      width: 250%;
-      left: 30%;
-      transform: translateZ(-4.375rem) scale(1.71);
-    }
-  
-    .foreground-zoom {
-      width: 250%;
-      left: 30%;
-      transform: translateZ(-4.375rem) scale(2.71);
-    }
+
+  .foreground {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(1.71);
   }
-  
+
+  .foreground-zoom {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .home-text {
+    padding: 2rem 10%;
+  }
+
+  .sectionHome {
+    background: url(/public/studio-illustration.webp);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 35.5rem) {
+  .logo {
+    max-width: 15.625rem;
+  }
+
+  .foreground {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+}
+
+@media (max-width: 26.563rem) {
+  .moon {
+    width: 18.75rem;
+    height: 8.75rem;
+    left: 40%;
+  }
+
+  .logo {
+    max-width: 14.063rem;
+  }
+
+  .foreground {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .home-text {
+    padding: 1.5rem 10%;
+  }
+}

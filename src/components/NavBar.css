@@ -81,4 +81,39 @@
   .nav-button .buttons{
     padding: 0.4rem 0.8rem;
   }
+
+
+  @media (max-width: 48rem) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-container {
+      padding: 0 3rem;
+    }
+  
+  }
+  
+  @media (max-width: 35.5rem) {
+
+    .nav-cta-button {
+      padding: 8px 20px;
+      font-size: 0.8rem;
+    }
+  
+    .nav-logo {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 26.563rem) {
+  
+    .nav-container {
+      padding: 0 1.6rem;
+    }
+  
+    .nav-button .buttons{
+      padding: 0.25rem 0.6rem;
+    }
+  }
   

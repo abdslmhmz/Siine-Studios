@@ -43,9 +43,9 @@ function Home({
       </header>
       <section className={`sectionHome ${animateHome ? 'sectionHome-animate' : ''}`}>
         <div className="action-text">
-          <h2 className="action-text1">bring your</h2>
-          <h1 className="action-text2">VISION to LIFE</h1>
-          <h3 className="action-text3">Creative production studio offering full-service filming, video editing, pre and post-production solutions.</h3>
+          <h2 class="home-title1" className="action-text1">bring your</h2>
+          <h1 className="home-title2">VISION to LIFE</h1>
+          <h3 className="home-text">Creative production studio offering full-service filming, video editing, pre and post-production solutions.</h3>
         </div>
         <div className="action-buttons">
           <button className="buttons">

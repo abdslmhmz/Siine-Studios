@@ -166,7 +166,7 @@ h3{
   }
 
   h3 {
-    padding: 2rem 10%;
+    
     font-size: 0.9rem;
     line-height: 1.25rem;
   }
@@ -178,14 +178,6 @@ h3{
 
   .buttons-icon {
     margin: -0.5rem;
-  }
-
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-container {
-    padding: 0 3rem;
   }
 
 }
@@ -207,16 +199,6 @@ h3{
   .action-buttons .buttons {
     padding: 0.4rem 1.5rem;
   }
-
-
-  .nav-cta-button {
-    padding: 8px 20px;
-    font-size: 0.8rem;
-  }
-
-  .nav-logo {
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-width: 26.563rem) {
@@ -230,7 +212,6 @@ h3{
   }
 
   h3 {
-    padding: 1.5rem 10%;
     font-size: 0.8rem;
   }
 
@@ -240,14 +221,6 @@ h3{
 
   .action-buttons .buttons {
     padding: 0.3rem 1rem;
-  }
-
-  .nav-container {
-    padding: 0 1.6rem;
-  }
-
-  .nav-button .buttons{
-    padding: 0.25rem 0.6rem;
   }
 }
 
