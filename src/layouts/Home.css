@@ -6,6 +6,18 @@
   perspective: 6.25rem;
 }
 
+.home-dark-filter-zoom{
+  opacity: 0;
+}
+
+.home-dark-filter{
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+  background-color: #10013898;
+  transform: translateZ(-4rem) scale(2) ;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -95,7 +107,7 @@
 .logo,
 .buttons-zoom,
 .background,
-.logo-animateHome {
+.logo-animateHome, .home-dark-filter {
   transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
 }
 
@@ -111,7 +123,7 @@
 }
 
 .logo-animateHome {
-  padding-top: 42vh;
+  padding-top: 33vh;
 }
 
 .home-text-zoom{
@@ -130,16 +142,6 @@
   justify-content: center;
   gap: 0.5rem;
   transition: opacity 1s ease;
-}
-
-.home-text button{
-  margin-top: 5rem;
-}
-
-.home-text h2{
-  margin-top: 2.5rem;
-  font-size: 2rem;
-  font-weight: 400;
 }
 
 .home-text h3{

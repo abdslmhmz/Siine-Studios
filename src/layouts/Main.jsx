@@ -9,8 +9,8 @@ function Main({ animateMain }) {
         <div className={`Main ${animateMain ? 'Main-animate' : ''}`}>
             <NavBar animateMain={animateMain} />
             <div>
-                <header class="Services-header parallax-1">
-                    <div class="parallax-inner">
+                <header className="Services-header parallax-1">
+                    <div className="parallax-inner">
                         <h1 className='action-text2'>Our Services</h1>
                     </div>
                     <div className="dark-filter"></div>
@@ -18,8 +18,8 @@ function Main({ animateMain }) {
 
                 <Services />
 
-                <header class="Services-header parallax-2">
-                    <div class="parallax-inner">
+                <header className="Services-header parallax-2">
+                    <div className="parallax-inner">
                         <div className='action-text2'>Scroll Down</div>
                     </div>
                 </header>
@@ -36,8 +36,8 @@ function Main({ animateMain }) {
                         aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam
                         maiores vitae deserunt cum ducimus.</p>
                 </section>
-                <header class="Services-header parallax-3">
-                    <div class="parallax-inner">
+                <header className="Services-header parallax-3">
+                    <div className="parallax-inner">
                         <h1>Scroll Down</h1>
                     </div>
                 </header>

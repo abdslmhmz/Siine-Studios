@@ -99,8 +99,7 @@ h3{
 .dark-filter {
   position: absolute;
   width: 100vw;
-  height: 70vh;
-  z-index: 1;
+  height: 100vh;
   background-color: #100138;
   opacity: 0.4;
 }
