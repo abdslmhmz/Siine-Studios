@@ -93,23 +93,13 @@ h3{
 }
 
 
-
-
-
 .dark-filter {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   background-color: #100138;
   opacity: 0.4;
 }
-
-
-
-
-
-
-
 
 
 .parallax-1{
@@ -125,13 +115,13 @@ h3{
 
 
 .parallax-1 {
-  background: url(/public/production-illustration.webp) no-repeat;
+  background: url(/public/production-illustration1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .parallax-2 {
-  background: url(/public/production-illustration.webp) no-repeat;
+  background: url(/public/post-production-illustration.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -145,6 +135,14 @@ h3{
 .parallax-inner {
   padding: 10% 0;
   z-index: 2;
+}
+
+.servicies-text1{
+  font-size: 2.2rem;
+}
+
+.servicies-text2{
+  font-size: 3rem;
 }
 
 

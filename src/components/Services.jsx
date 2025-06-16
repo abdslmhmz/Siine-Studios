@@ -56,19 +56,6 @@ function Main() {
           </div>
         ))}
       </div>
-
-      {/* Content Types Grid */}
-      <div className="content-types">
-        <h3 className="content-types-title">What We Create</h3>
-        <div className="content-grid">
-          {contentTypes.map((type, index) => (
-            <div key={index} className="content-card">
-              <div className="content-icon">{type.icon}</div>
-              <h4>{type.title}</h4>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   </section>
   )

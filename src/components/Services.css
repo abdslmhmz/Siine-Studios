@@ -28,7 +28,7 @@
 .Services-section {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, var(--deep-purple) 100%);
   color: var(--white);
-  padding: 6rem;
+  padding: 4rem;
 }
 
 /* Container */
@@ -37,10 +37,15 @@
   margin: 0 auto;
 }
 
+.services-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .service-item {
   background: var(--white);
   border-radius: 15px;
-  margin-bottom: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.5s ease;
@@ -124,7 +129,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .content-card {
