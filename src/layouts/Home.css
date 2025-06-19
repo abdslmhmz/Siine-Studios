@@ -149,6 +149,10 @@
   font-weight: 400;
 }
 
+.Services-animate{
+  transform: translateX(-100vw);
+}
+
 @media (max-width: 48rem) {
   .moon {
     width: 25rem;
