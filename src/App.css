@@ -13,10 +13,12 @@
 }
 
 
-body {
+html,body {
   margin: 0;
   overflow: hidden;
   font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background: rgb(17, 2, 54);
 }
 
 img{box-sizing: border-box;}
@@ -28,16 +30,15 @@ h1,h2,h3,h4,h5,h6,p {
 
 h2,
 h1 {
-  text-align: center;
+ 
   font-family: 'Libre Franklin', 'Arial Narrow', Arial, sans-serif;
-  color: #e5fbfb;
+  color: #ffffff;
   text-shadow: 0.125rem 0.125rem 0.313rem #0a0b35, 0.313rem 0.313rem 4.375rem #3537aa;
 }
 
 h3,p {
   font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  color: #e5fbfb;
+  color: #ffffff;
 }
 
 
@@ -93,57 +94,7 @@ h3{
 }
 
 
-.dark-filter {
-  position: absolute;
-  width: 100vw;
-  height: 70vh;
-  background-color: #100138;
-  opacity: 0.4;
-}
 
-
-.parallax-1{
-  width: 100vw;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-.parallax-1 {
-  background: url(/public/production-illustration1.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax-2 {
-  background: url(/public/post-production-illustration.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax-3 {
-  background: url(/public/post-production-illustration.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax-inner {
-  padding: 10% 0;
-  z-index: 2;
-}
-
-.servicies-text1{
-  font-size: 2.2rem;
-}
-
-.servicies-text2{
-  font-size: 3rem;
-}
 
 
 

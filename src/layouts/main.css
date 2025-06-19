@@ -1,0 +1,60 @@
+/* CSS Variables for Color Palette */
+:root {
+  --primary-dark: #110236;
+  --primary-blue: #1c2270;
+  --deep-purple: #1a0c54;
+  --bright-blue: #3732c4;
+  --electric-blue: #353bcf;
+  --sky-blue: #176fc4;
+  --light-cyan: #e5fbfb;
+  --white: #ffffff;
+  --gray-medium: #6c757d;
+}
+
+.Main{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.Main-animate{
+  transform: translateX(-100vw);
+}
+
+
+.parallax-1{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.parallax-2 {
+  background: url(/public/production-illustration.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax-3 {
+  background: url(/public/post-production-illustration.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.parallax-inner2{
+  z-index: 2;
+  padding: 4%;
+}
+
