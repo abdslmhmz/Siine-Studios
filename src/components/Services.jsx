@@ -20,7 +20,7 @@ function Services() {
 
             <div className="pre-production-section">
                 <div className="pre-production-container">
-                    <h2 className="pre-production-title servicies-h2">Pre-Production</h2>
+                    <h2 className="pre-production-title">Pre-Production</h2>
                     <h3 className="pre-production-details">
                         Every great production starts with a solid blueprint. 
                         Our pre-production phase ensures your project is thoughtfully planned, 
@@ -61,7 +61,7 @@ function Services() {
 
              <div className="production-section">
                 <div className="pre-production-container">
-                    <h2 className="pre-production-title servicies-h2">Production</h2>
+                    <h2 className="pre-production-title">Production</h2>
                     <h3 className="pre-production-details">
                         Our production team brings your vision to life with state-of-the-art equipment 
                         and expert craftsmanship, ensuring every frame is perfect.
@@ -103,7 +103,7 @@ function Services() {
 
              <div className="pre-production-section">
                 <div className="pre-production-container">
-                    <h2 className="pre-production-title servicies-h2">Post-Production</h2>
+                    <h2 className="pre-production-title">Post-Production</h2>
                     <h3 className="pre-production-details">
                         This is where the magic happens. In post-production, we transform raw 
                         footage into a refined, immersive experience — meticulously enhancing 
