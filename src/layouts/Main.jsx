@@ -4,6 +4,8 @@ import NavBar from '../components/NavBar.jsx';
 import Services from '../components/Services.jsx';
 import Ourwork from "../components/Ourwork.jsx";
 
+import Footer from "../components/footer.jsx";
+
 function Main({ animateMain }) {
 
     const contentTypes = [
@@ -19,6 +21,8 @@ function Main({ animateMain }) {
             <NavBar animateMain={animateMain} />
             <Services/>
             <Ourwork/>
+
+            <Footer/>
         </div>
     )
 }
