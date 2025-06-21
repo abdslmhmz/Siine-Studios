@@ -6,16 +6,16 @@
   perspective: 6.25rem;
 }
 
-.home-dark-filter-zoom{
+.home-dark-filter-zoom {
   opacity: 0;
 }
 
-.home-dark-filter{
+.home-dark-filter {
   position: absolute;
   width: 100vw;
   height: 150vh;
   background-color: #10013871;
-  transform: translateZ(-4rem) scale(2) ;
+  transform: translateZ(-4rem) scale(2);
 }
 
 .header {
@@ -30,7 +30,7 @@
 }
 
 .header,
-.sectionHome{
+.sectionHome {
   transition: transform 1s ease
 }
 
@@ -107,7 +107,8 @@
 .logo,
 .buttons-zoom,
 .background,
-.logo-animateHome, .home-dark-filter {
+.logo-animateHome,
+.home-dark-filter {
   transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
 }
 
@@ -126,15 +127,15 @@
   padding-top: 30vh;
 }
 
-.home-text-zoom{
+.home-text-zoom {
   opacity: 0;
 }
 
-.home-text-animateHome{
+.home-text-animateHome {
   display: none;
 }
 
-.home-text{
+.home-text {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -144,25 +145,26 @@
   transition: opacity 1s ease;
 }
 
-.home-text h3{
+.home-text h3 {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.Services-animate{
+.Services-animate {
   transform: translateX(-100vw);
 }
 
-.booking-section{
-    height: 70vh;
-    position: fixed;
-    width: 100vw;
-    overflow-y: scroll;
-    background: #120236;
-    transition: transform 1s ease
+.booking-section {
+  padding-block: 2rem;
+  height: 70vh;
+  position: fixed;
+  width: 100vw;
+  overflow-y: scroll;
+  background: #120236;
+  transition: transform 1s ease
 }
 
-.booking-section-animate{
+.booking-section-animate {
   transform: translateY(-140vh);
 }
 
@@ -197,7 +199,8 @@
     background-size: cover;
     background-position: center;
   }
-  .home-text h3{
+
+  .home-text h3 {
     font-size: 0.9rem;
   }
 }
@@ -207,9 +210,10 @@
     max-width: 15.625rem;
   }
 
-  .home-text h2{
+  .home-text h2 {
     font-size: 1.6rem;
   }
+
   .foreground {
     width: 200%;
     left: 30%;
@@ -250,7 +254,7 @@
     padding: 1.5rem 10%;
   }
 
-  .home-text h3{
+  .home-text h3 {
     font-size: 0.8rem;
   }
 }
