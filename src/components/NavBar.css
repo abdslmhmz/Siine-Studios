@@ -29,6 +29,7 @@
   .nav-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   
   .nav-logo img{
@@ -57,6 +58,7 @@
     position: relative;
     padding: 0.5rem 0;
     transform: translateZ(0);
+    cursor: pointer;
   }
   
   .nav-link:hover {
