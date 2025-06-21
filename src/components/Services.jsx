@@ -6,7 +6,7 @@ function Services() {
         <div className="section">
 
 
-            <header className="section-header services-header">
+            <header className="section-header services-header" id="services">
                 <div className="section-header-inner">
                     <h1 className='section-h1'>Our Services</h1>
                     <h2 className='section-h2'>Crafting Visual Stories for the Digital Age</h2>

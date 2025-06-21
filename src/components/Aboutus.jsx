@@ -5,7 +5,7 @@ function Aboutus() {
     return (
         <div className="section">
 
-            <header className="section-header Aboutus-header">
+            <header className="section-header Aboutus-header" id="about">
                 <div className="section-header-inner">
                     <h1 className='section-h1'>About Us</h1>
                     <h3>

@@ -5,7 +5,7 @@ function Ourwork() {
     return (
         <div className="section">
 
-            <header className="section-header Ourwork-header">
+            <header className="section-header Ourwork-header" id="our-work">
                 <div className="section-header-inner">
                     <h1 className='section-h1'>Our Work</h1>
                     <h2 className='section-h2'>Elevate Your Brand's Story</h2>

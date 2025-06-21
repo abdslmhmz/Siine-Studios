@@ -30,7 +30,7 @@
 }
 
 .header,
-.sectionHome {
+.sectionHome{
   transition: transform 1s ease
 }
 
@@ -151,6 +151,19 @@
 
 .Services-animate{
   transform: translateX(-100vw);
+}
+
+.booking-section{
+    height: 70vh;
+    position: fixed;
+    width: 100vw;
+    overflow-y: scroll;
+    background: #120236;
+    transition: transform 1s ease
+}
+
+.booking-section-animate{
+  transform: translateY(-140vh);
 }
 
 @media (max-width: 48rem) {
