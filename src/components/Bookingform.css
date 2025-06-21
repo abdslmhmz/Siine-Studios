@@ -1,6 +1,7 @@
 .location-type-container {
     display: flex;
     justify-content: center;
+    padding-block: 2rem;
 }
 
 /* === Base Styling === */
