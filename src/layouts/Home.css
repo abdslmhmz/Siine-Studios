@@ -159,6 +159,7 @@
   height: 70vh;
   position: fixed;
   width: 100vw;
+  overflow-x: hidden;
   overflow-y: scroll;
   background: #120236;
   transition: transform 1s ease

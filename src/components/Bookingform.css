@@ -1,7 +1,6 @@
 .location-type-container {
     display: flex;
     justify-content: center;
-    padding-block: 2rem;
 }
 
 /* === Base Styling === */
@@ -67,18 +66,6 @@
 
 .booking-form input[type="radio"] {
   margin-right: 0.5rem;
-}
-
-.booking-form button {
-  background-color: #353bcf;
-  color: #e5fbfb;
-  border: none;
-  padding: 0.75rem 2rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
 }
 
 .booking-form button:hover {
@@ -180,12 +167,6 @@
     font-size: 0.95rem;
   }
 
-  .booking-form button {
-    width: 10%;
-    font-size: 1rem;
-    padding: 0.6rem;
-  }
-
   .booking-form fieldset label {
     display: block;
     margin-bottom: 0.5rem;
@@ -210,11 +191,6 @@
   .booking-form textarea {
     padding: 0.5rem;
     font-size: 0.9rem;
-  }
-
-  .booking-form button {
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem;
   }
 }
 

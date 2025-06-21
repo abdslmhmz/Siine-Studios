@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 import './Bookingform.css';
 
 
-function Bookingform({ submitted, handleChange, handleSubmit, selectedDate, setSelectedDate, formData, setFormData }) {
+function Bookingform({ submitted, handleChange, handleSubmit, selectedDate, setSelectedDate, formData, setFormData}) {
 
     return (
         <div className="booking-form-container">
@@ -74,7 +74,7 @@ function Bookingform({ submitted, handleChange, handleSubmit, selectedDate, setS
                         <textarea name="description" rows="4" onChange={handleChange} />
                     </label>
 
-                    <button type="submit">Request Booking</button>
+                    <button className='buttons' type="submit">Request Booking</button>
                 </form>
             )}
         </div>

@@ -59,6 +59,7 @@ h3{
 }
 
 .buttons {
+  margin: 0 auto;
   position: relative;
   width: fit-content;
   padding: 0.5rem 3.5rem;
@@ -76,6 +77,12 @@ h3{
   font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
   transition: all 0.3s;
+}
+
+.red-buttons{
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border-color: #ff1a1a;
 }
 
 .action-buttons {
