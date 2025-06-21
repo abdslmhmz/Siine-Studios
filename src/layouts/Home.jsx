@@ -88,6 +88,7 @@ function Home({
                     formData={formData}
                     setFormData={setFormData}
                     />
+        <div className="footer"></div>
       </section>
 
     </div>
