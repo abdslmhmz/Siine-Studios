@@ -91,7 +91,7 @@ function Home({
           setFormData={setFormData}
           bookingButtonClicked={bookingButtonClicked}
         />
-        <button className="buttons red-buttons booking-red-button" onClick={() => handleClick(setAnimateBooking, animateBooking)}> Cancel </button>
+        <button className="buttons red-buttons booking-red-button" onClick={() => handleClick(setAnimateBooking, animateBooking)}> Go Back </button>
         <div className="footer"></div>
       </section>
 

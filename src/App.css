@@ -96,6 +96,11 @@ h3{
   margin: -0.5rem;
 }
 
+.unclickable-button{
+  pointer-events: none;
+  opacity: 0.9;
+}
+
 .Main, .Home{
   transition: transform 1.5s ease-in-out
 }
