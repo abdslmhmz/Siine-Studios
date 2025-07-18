@@ -110,7 +110,7 @@ function App() {
         });
 
       } else {
-        console.error(result.error);
+        console.error(response.error);
         alert('Failed to submit booking. Please try again later.');
       }
     } catch (error) {
