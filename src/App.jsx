@@ -70,30 +70,45 @@ function App() {
   e.preventDefault();
   setBookingButtonClicked(true);
 
-  const timestamp = new Date().toISOString();
-  
-  const dataToSend = {
-    ...formData,
-    status: 'Pending',
-    submittedAt: timestamp,
-  };
-
   try {
     const response = await fetch('/api/book', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(dataToSend),
+      body: JSON.stringify(formData),
     });
 
-    if (!response.ok) alert('Une erreur est survenue lors de l’envoi.');
-    if (response.ok) setSubmitted(true);
+    const result = await response.json();
+
+    if (response.ok) {
+      alert('Booking submitted successfully!');
+      setSubmitted(true);
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        date: '',
+        time: '',
+        location: '',
+        service: '',
+        description: '',
+      });
+
+    } else {
+      console.error(result.error);
+      alert('Failed to submit booking. Please try again later.');
+    }
   } catch (error) {
-    console.error('❌ Submission error:', error);
-    alert('Une erreur est survenue lors de l’envoi.');
+    console.error('Network error:', error);
+    alert('Something went wrong. Please check your connection.');
   }
+
+  setBookingButtonClicked(false);
 };
+
 
   return (
     <div className="App">
