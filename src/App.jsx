@@ -66,48 +66,59 @@ function App() {
     });
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
-  setBookingButtonClicked(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setBookingButtonClicked(true);
 
-  try {
-    const response = await fetch('/api/book', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+    const bookingId = `BK-${Date.now().toString(36)}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
 
-    const result = await response.json();
+    const payload = {
+      bookingId,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      date: formData.date,
+      time: formData.time,
+      location: formData.location,
+      service: formData.service,
+      description: formData.description,
+    };
 
-    if (response.ok) {
-      alert('Booking submitted successfully!');
-      setSubmitted(true);
-
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        date: '',
-        time: '',
-        location: '',
-        service: '',
-        description: '',
+    try {
+      const response = await fetch('/api/book', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
 
-    } else {
-      console.error(result.error);
-      alert('Failed to submit booking. Please try again later.');
-    }
-  } catch (error) {
-    console.error('Network error:', error);
-    alert('Something went wrong. Please check your connection.');
-  }
+      if (response.ok) {
+        setSubmitted(true);
 
-  setBookingButtonClicked(false);
-};
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          date: '',
+          time: '',
+          location: '',
+          service: '',
+          description: '',
+        });
+
+      } else {
+        console.error(result.error);
+        alert('Failed to submit booking. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      alert('Something went wrong. Please check your connection.');
+    }
+    setBookingButtonClicked(false);
+  };
 
 
   return (

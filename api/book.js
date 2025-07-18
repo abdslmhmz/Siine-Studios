@@ -1,13 +1,13 @@
 // /api/book.js
-
 import { google } from 'googleapis';
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Only POST requests are allowed' });
+        return res.status(405).json({ error: 'Only POST requests allowed' });
     }
 
     const {
+        bookingId,
         name,
         email,
         phone,
@@ -19,23 +19,23 @@ export default async function handler(req, res) {
         description
     } = req.body;
 
-    // Initialize Google Sheets API auth
-    const auth = new google.auth.GoogleAuth({
-        credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON),
-        scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-    });
-
-    const sheets = google.sheets({ version: 'v4', auth });
-
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-    const range = 'Sheet1!A1'; // Can be A1 or next empty row detection
-
     try {
-        // Prepare row values
-        const timestamp = new Date().toISOString(); // ISO format for timestamp
-        const status = 'Pending';
+        // Auth with Google Service Account
+        const auth = new google.auth.GoogleAuth({
+            credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON),
+            scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+        });
+
+        const sheets = google.sheets({ version: 'v4', auth });
+
+        const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+        const range = 'Sheet1!A1';
+
+        // Prepare the row: bookingId | timestamp | name | ... | status
+        const timestamp = new Date().toISOString();
 
         const row = [
+            bookingId,
             name,
             email,
             phone,
@@ -45,11 +45,11 @@ export default async function handler(req, res) {
             location,
             service,
             description,
-            status,
+            'Pending',
             timestamp
         ];
 
-        // Append to sheet
+        // Append the row to the spreadsheet
         await sheets.spreadsheets.values.append({
             spreadsheetId,
             range,
@@ -59,10 +59,9 @@ export default async function handler(req, res) {
             },
         });
 
-        return res.status(200).json({ message: 'Booking submitted successfully' });
-
+        res.status(200).json({ message: 'Booking successfully submitted!' });
     } catch (error) {
         console.error('Google Sheets API error:', error);
-        return res.status(500).json({ error: 'Internal Server Error while submitting booking' });
+        res.status(500).json({ error: 'Failed to write to Google Sheets' });
     }
 }

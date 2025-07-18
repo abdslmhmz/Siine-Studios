@@ -79,18 +79,18 @@ function Home({
         </div>
       </section>
 
-    
+
       <section className={`booking-section ${animateBooking ? 'booking-section-animate' : ''}`}>
-        <Bookingform 
-                    submitted={submitted}
-                    handleChange={handleChange}
-                    handleSubmit={handleSubmit}
-                    selectedDate={selectedDate}
-                    setSelectedDate={setSelectedDate}
-                    formData={formData}
-                    setFormData={setFormData}
-                    bookingButtonClicked={bookingButtonClicked}
-                    />
+        <Bookingform
+          submitted={submitted}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          selectedDate={selectedDate}
+          setSelectedDate={setSelectedDate}
+          formData={formData}
+          setFormData={setFormData}
+          bookingButtonClicked={bookingButtonClicked}
+        />
         <button className="buttons red-buttons booking-red-button" onClick={() => handleClick(setAnimateBooking, animateBooking)}> Cancel </button>
         <div className="footer"></div>
       </section>
