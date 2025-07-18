@@ -1,0 +1,196 @@
+:root {
+  --primary-dark: #110236;
+  --primary-blue: #1c2270;
+  --deep-purple: #1a0c54;
+  --bright-blue: #3732c4;
+  --electric-blue: #353bcf;
+  --purple-dark: #311656;
+  --sky-blue: #176fc4;
+  --light-cyan: #e5fbfb;
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray-medium: #6c757d;
+}
+
+
+html,body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background: rgb(17, 2, 54);
+}
+
+img{box-sizing: border-box;}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h1 {
+ 
+  font-family: 'Libre Franklin', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: 0.125rem 0.125rem 0.313rem #0a0b35, 0.313rem 0.313rem 4.375rem #3537aa;
+}
+
+h3,p {
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+}
+
+
+h2 {
+  font-weight: 300;
+  font-size: 2.7rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+h3{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.buttons {
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  padding: 0.5rem 3.5rem;
+  background-color: #e5fbfb;
+  border-radius: 50px;
+  border-color: #c3f5f5;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: rgb(46, 46, 46);
+  font-size: 0.9em;
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.red-buttons{
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border-color: #ff1a1a;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 3rem;
+}
+
+.buttons-icon {
+  width: 1rem;
+  height: 1rem;
+  margin: -0.5rem;
+}
+
+.Main, .Home{
+  transition: transform 1.5s ease-in-out
+}
+
+
+
+
+
+
+
+@media (max-width: 48rem) {
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+
+  .buttons {
+    padding: 0.4rem 2.4rem;
+    font-size: 0.75em;
+  }
+
+  .buttons-icon {
+    margin: -0.5rem;
+  }
+
+}
+
+@media (max-width: 35.5rem) {
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .action-buttons {
+    gap: 2rem;
+  }
+
+  .action-buttons .buttons {
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+@media (max-width: 26.563rem) {
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .action-buttons {
+    gap: 1.5rem;
+  }
+
+  .action-buttons .buttons {
+    padding: 0.3rem 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

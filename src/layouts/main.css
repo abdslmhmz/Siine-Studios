@@ -1,0 +1,254 @@
+/* CSS Variables for Color Palette */
+:root {
+    --primary-dark: #110236;
+    --primary-blue: #1c2270;
+    --deep-purple: #1a0c54;
+    --bright-blue: #3732c4;
+    --electric-blue: #353bcf;
+    --sky-blue: #176fc4;
+    --light-cyan: #e5fbfb;
+    --white: #ffffff;
+    --gray-medium: #6c757d;
+}
+
+.Main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 3rem;
+}
+
+.Main-animate {
+    transform: translateX(-100vw);
+}
+
+.section {
+    background: rgb(17, 2, 54);
+    color: var(--white);
+}
+
+.section-header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header-inner {
+    z-index: 2;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-header-inner h3 {
+    max-width: 40rem;
+    align-self: center;
+}
+
+
+.section-h1 {
+    font-size: 3rem;
+}
+
+.section-h2 {
+    font-size: 2.2rem;
+}
+
+
+.card-title {
+    font-size: 2.2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.cards-container,
+.mini-cards-container {
+    padding: 4rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.card-section,
+.middle-card-section {
+    text-align: left;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(17, 2, 54, 0.123);
+    border: solid 0.2rem #ffffff10;
+}
+
+.card-items {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #ffffff10;
+    border-radius: 1rem;
+}
+
+.card-item-title {
+    font-weight: bolder;
+}
+
+.mini-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mini-card-details > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    height: 10vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer p {
+    font-size: 0.7rem;
+    color: var(--gray-medium);
+    text-align: center;
+}
+
+
+
+@media (max-width: 48rem) {
+
+    .section-header-inner {
+        z-index: 2;
+        padding: 3rem;
+        gap: 1.2rem;
+    }
+
+    .section-h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-section,
+    .middle-card-section,
+    .card-container {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .cards-container,
+    .mini-cards-container {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 35.5rem) {
+
+    .section-header-inner {
+        z-index: 2;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .section-h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-section,
+    .middle-card-section,
+    .card-container {
+        padding: 1rem;
+    }
+
+    .card-items {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-item-img {
+        width: 100%;
+        height: 10rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .mini-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container,
+    .mini-cards-container {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 26.563rem) {
+    .section-header-inner {
+        z-index: 2;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .card-section,
+    .middle-card-section,
+    .card-container {
+        padding: 1rem;
+    }
+
+    .card-items {
+        padding: 1rem 0.2rem;
+        font-size: 0.9rem;
+    }
+}

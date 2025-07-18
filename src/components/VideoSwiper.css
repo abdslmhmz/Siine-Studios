@@ -1,0 +1,56 @@
+/* VideoSwiper.css */
+
+.video-swiper-wrapper { /* space for pagination */
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 700px;          /* set max size */
+  aspect-ratio: 16 / 9;      /* keeps portrait ratio */
+  margin: 0 auto;            /* center horizontally */
+  position: relative;
+}
+
+/* Put the dots in the footer zone we just created */
+.swiper-pagination {
+  display: none;       /* above background, below any modals */
+}
+
+
+
+/* 2️⃣  One aspect‑ratio “frame” for every slide   */
+/*     Uses the modern `aspect-ratio` property    */
+.my‑swiper .swiper-slide {
+  aspect-ratio: 16 / 9;      /* 👈 pick ONE reference ratio      */
+  background: #000;          /* black letter‑box bars            */
+
+  /* Make the slide a flexbox so we can centre its video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 3️⃣  Video fills the frame but never stretches   */
+.my‑swiper .swiper-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+  border-radius: 12px;     /* whole video visible, letter‑box   */
+}
+
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  padding-block: 2rem;
+}
+
+/* (If you prefer to crop & fill the box edge‑to‑edge, swap to…)
+.my‑swiper .swiper-slide video { object-fit: cover; }
+*/
+
+
+/* 4️⃣  OPTIONAL: change the reference ratio on tall screens */
+@media (max-aspect-ratio: 1/1) {      /* roughly “phone held upright” */
+  .my‑swiper .swiper-slide {
+    aspect-ratio: 9 / 16;             /* portrait frame instead      */
+  }
+}

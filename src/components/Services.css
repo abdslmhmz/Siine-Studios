@@ -1,0 +1,40 @@
+.services-header {
+    background: url(/public/production-illustration1.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.pre-production-item-img {
+    background: url(/public/pre-production-illustration.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.production-item-img {
+    background: url(/public/production-illustration2.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-production-item-img {
+    background: url(/public/post-production-illustration.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+@media (max-width: 48rem) {
+
+}
+
+@media (max-width: 35.5rem) {
+
+    
+}
+
+@media (max-width: 26.563rem) {
+    
+}

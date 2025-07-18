@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 2, 54, 0.836);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    transform: translateZ(0);
+    opacity: 0;
+    will-change: opacity, transform;
+  }
+
+  .navbar-animateMain{
+    opacity: 1;
+  }
+  
+  .nav-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-logo img{
+    width: 7rem;
+    height: auto;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+    transform: translateZ(0);
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: var(--light-cyan);
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--bright-blue), var(--electric-blue));
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-button .buttons{
+    padding: 0.4rem 0.8rem;
+  }
+
+
+  @media (max-width: 48rem) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-container {
+      padding: 0 3rem;
+    }
+  
+  }
+  
+  @media (max-width: 35.5rem) {
+
+    .nav-cta-button {
+      padding: 8px 20px;
+      font-size: 0.8rem;
+    }
+  
+    .nav-logo {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 26.563rem) {
+  
+    .nav-container {
+      padding: 0 1.6rem;
+    }
+  
+    .nav-button .buttons{
+      padding: 0.25rem 0.6rem;
+    }
+  }
+  

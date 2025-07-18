@@ -1,0 +1,193 @@
+.location-type-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* === Base Styling === */
+.booking-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #110236;
+  color: #e5fbfb;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(17, 2, 54, 0.5);
+  box-sizing: border-box;
+}
+
+.booking-form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #176fc4;
+}
+
+.booking-form-container p {
+  margin-bottom: 1.5rem;
+  color: #e5fbfb;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #e5fbfb;
+  font-weight: 500;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #1a0c54;
+  border: 1px solid #3732c4;
+  border-radius: 6px;
+  color: #e5fbfb;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  box-sizing: border-box;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.booking-form fieldset {
+  margin: 1rem 0;
+  border: none;
+  padding: 0;
+}
+
+.booking-form legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e5fbfb;
+}
+
+.booking-form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.confirmation {
+  padding: 1rem;
+  background-color: #1c2270;
+  color: #e5fbfb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* === React DatePicker Styling === */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #1a0c54;
+  border: 1px solid #3732c4;
+  border-radius: 6px;
+  color: #e5fbfb;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.booking-form-container h2 {
+    font-size: 1.6rem;
+  }
+
+.react-datepicker {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c2270;
+  border: 1px solid #3732c4;
+  color: #e5fbfb;
+}
+
+.react-datepicker button{
+    padding: 0.75rem 1.2rem;
+}
+
+.react-datepicker__header {
+  background-color: #311656;
+  border-bottom: 1px solid #3732c4;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: #e5fbfb;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  color: #e5fbfb;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #353bcf;
+  color: #e5fbfb;
+}
+
+.react-datepicker__day:hover {
+  background-color: #176fc4;
+  color: #fff;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 1024px) {
+  .booking-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-form-container {
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .booking-form-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .booking-form-container p {
+    font-size: 1rem;
+  }
+
+  .booking-form label,
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .booking-form fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form-container {
+    padding: 1rem;
+  }
+
+  .booking-form-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .booking-form-container p {
+    font-size: 0.95rem;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+

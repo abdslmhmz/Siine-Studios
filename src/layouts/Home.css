@@ -1,0 +1,261 @@
+.Home {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 6.25rem;
+}
+
+.home-dark-filter-zoom {
+  opacity: 0;
+}
+
+.home-dark-filter {
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+  background-color: #160e2c71;
+  transform: translateZ(-4rem) scale(2);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.header,
+.sectionHome {
+  transition: transform 1s ease
+}
+
+.background,
+.foreground,
+.foreground-zoom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.background {
+  transform: translateZ(-6.25rem) scale(2.1);
+}
+
+.foreground {
+  transform: translateZ(-4.375rem) scale(1.71);
+}
+
+.background-zoom {
+  filter: brightness(0.5);
+}
+
+.foreground-zoom {
+  transform: translateZ(-4.375rem) scale(2.71);
+}
+
+.sectionHome {
+  background: url(/public/studio-illustration.webp);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.sectionHome-animate,
+.header-animateHome {
+  transform: translateY(-70vh);
+}
+
+.moon {
+  position: absolute;
+  width: 37.5rem;
+  height: 17.5rem;
+  top: 5%;
+  left: 50%;
+  transform: translateZ(-4.438rem) scale(1.72);
+}
+
+.moon-zoom {
+  top: -100%;
+}
+
+.buttons-zoom {
+  opacity: 0;
+}
+
+.buttons-animateHome {
+  cursor: not-allowed;
+}
+
+.action-text {
+  display: block;
+  text-align: center;
+}
+
+.foreground,
+.moon,
+.logo,
+.buttons-zoom,
+.background,
+.logo-animateHome,
+.home-dark-filter {
+  transition: transform 1.5s ease, filter 1s ease, top 1.5s ease, opacity 1s ease, padding 1s ease;
+}
+
+
+.logo {
+  max-width: 20rem;
+  height: auto;
+  transform: translateZ(-4.125rem) scale(1.51);
+}
+
+.logo-zoom {
+  transform: translateZ(-3.125rem) scale(1.51) translateY(-1rem);
+}
+
+.logo-animateHome {
+  padding-top: 30vh;
+}
+
+.home-text-zoom {
+  opacity: 0;
+}
+
+.home-text-animateHome {
+  display: none;
+}
+
+.home-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: opacity 1s ease;
+}
+
+.home-text h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.Services-animate {
+  transform: translateX(-100vw);
+}
+
+.booking-section {
+  padding-top: 2rem;
+  height: 70vh;
+  position: fixed;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: #120236;
+  transition: transform 1s ease
+}
+
+.booking-section-animate {
+  transform: translateY(-140vh);
+}
+
+@media (max-width: 48rem) {
+  .moon {
+    width: 25rem;
+    height: 12.5rem;
+  }
+
+  .logo {
+    max-width: 18.75rem;
+  }
+
+  .foreground {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 150%;
+    left: 10%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .sectionHome-text {
+    padding: 2rem 10%;
+  }
+
+  .sectionHome {
+    background: url(/public/studio-illustration.webp);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home-text h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 35.5rem) {
+  .logo {
+    max-width: 15.625rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .foreground {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 200%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+}
+
+@media (max-width: 26.563rem) {
+  .moon {
+    width: 18.75rem;
+    height: 8.75rem;
+    left: 40%;
+  }
+
+  .logo {
+    max-width: 17rem;
+  }
+
+  .foreground {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(1.71);
+  }
+
+  .foreground-zoom {
+    width: 250%;
+    left: 30%;
+    transform: translateZ(-4.375rem) scale(2.71);
+  }
+
+  .sectionHome-text {
+    padding: 1.5rem 10%;
+  }
+
+  .home-text h3 {
+    font-size: 0.8rem;
+  }
+}
