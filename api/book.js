@@ -31,7 +31,6 @@ export default async function handler(req, res) {
         const spreadsheetId = process.env.GOOGLE_SHEET_ID;
         const range = 'Sheet1!A1';
 
-        // Prepare the row: bookingId | timestamp | name | ... | status
         const timestamp = new Date().toISOString();
 
         const row = [
